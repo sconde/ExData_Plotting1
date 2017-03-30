@@ -15,7 +15,7 @@ subMetering1 <- as.numeric(validData$Sub_metering_1)
 subMetering2 <- as.numeric(validData$Sub_metering_2)
 subMetering3 <- as.numeric(validData$Sub_metering_3)
 
-png("plot3.png", width = 480, height = 480) #instantiate the png device (height, width) in pixels
+png("plot3.png", width = 480, height = 480, units = "px") #instantiate the png device (height, width) in pixels
 plot(datetime, subMetering1, type = "l", ylab = "Energy Submetering", xlab = "")
 lines(datetime, subMetering2, type = "l", col = "red")
 lines(datetime, subMetering3, type = "l", col = "blue")

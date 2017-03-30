@@ -18,7 +18,7 @@ subMetering2 <- as.numeric(validData$Sub_metering_2)
 subMetering3 <- as.numeric(validData$Sub_metering_3)
 
 
-png("plot4.png", width = 480, height = 480) #instantiate the png device (height, width) in pixels
+png("plot4.png", width = 480, height = 480, units = "px") #instantiate the png device (height, width) in pixels
 par(mfrow  =  c(2, 2)) # subplots
 
 # subplot(2,2,1): Flobal Active Power
